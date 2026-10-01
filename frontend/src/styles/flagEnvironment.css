@@ -1,0 +1,309 @@
+/* ================================
+   Flag Environment Page
+================================ */
+
+.flag-environment-page {
+  width: 100%;
+  padding: 24px;
+}
+
+
+/* ================================
+   Page Header
+================================ */
+
+.flag-environment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.flag-environment-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.flag-environment-header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Create Button
+================================ */
+
+.flag-environment-create-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.flag-environment-create-button:hover {
+  background-color: #1d4ed8;
+}
+
+.flag-environment-create-button:active {
+  transform: translateY(1px);
+}
+
+
+/* ================================
+   Error Message
+================================ */
+
+.flag-environment-error {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: 14px;
+}
+
+
+/* ================================
+   Table Container
+================================ */
+
+.flag-environment-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================
+   Table
+================================ */
+
+.flag-environment-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.flag-environment-table thead {
+  background-color: #f8fafc;
+}
+
+.flag-environment-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.flag-environment-table td {
+  padding: 15px 16px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.flag-environment-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.flag-environment-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+
+/* ================================
+   Names
+================================ */
+
+.flag-environment-name {
+  font-weight: 600;
+  color: #1f2937 !important;
+}
+
+
+/* ================================
+   Status
+================================ */
+
+.flag-environment-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.flag-environment-status.enabled {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.flag-environment-status.disabled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* ================================
+   Actions
+================================ */
+
+.flag-environment-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag-environment-view-button,
+.flag-environment-edit-button {
+  padding: 7px 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.flag-environment-view-button {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.flag-environment-view-button:hover {
+  background-color: #d1d5db;
+}
+
+.flag-environment-edit-button {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.flag-environment-edit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.flag-environment-view-button:active,
+.flag-environment-edit-button:active {
+  transform: translateY(1px);
+}
+
+
+/* ================================
+   Loading State
+================================ */
+
+.flag-environment-loading {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Empty State
+================================ */
+
+.flag-environment-empty {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+
+  .flag-environment-page {
+    padding: 18px;
+  }
+
+  .flag-environment-header {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .flag-environment-header h1 {
+    font-size: 24px;
+  }
+
+  .flag-environment-header p {
+    font-size: 13px;
+  }
+
+  .flag-environment-create-button {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .flag-environment-table-container {
+    border-radius: 8px;
+  }
+
+  .flag-environment-table {
+    min-width: 850px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .flag-environment-page {
+    padding: 14px;
+  }
+
+  .flag-environment-header {
+    flex-direction: column;
+  }
+
+  .flag-environment-header h1 {
+    font-size: 22px;
+  }
+
+  .flag-environment-create-button {
+    width: 100%;
+  }
+
+  .flag-environment-table th,
+  .flag-environment-table td {
+    padding: 12px;
+  }
+
+  .flag-environment-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flag-environment-view-button,
+  .flag-environment-edit-button {
+    width: 100%;
+  }
+}
+

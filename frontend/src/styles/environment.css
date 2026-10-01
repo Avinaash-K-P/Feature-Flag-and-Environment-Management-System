@@ -1,0 +1,237 @@
+/* ================================
+   Environment Page
+================================ */
+
+.environment-page {
+  width: 100%;
+  padding: 24px;
+}
+
+
+/* ================================
+   Page Header
+================================ */
+
+.environment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.environment-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.environment-header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Error Message
+================================ */
+
+.environment-error {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: 14px;
+}
+
+
+/* ================================
+   Table Container
+================================ */
+
+.environment-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================
+   Table
+================================ */
+
+.environment-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.environment-table thead {
+  background-color: #f8fafc;
+}
+
+.environment-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.environment-table td {
+  padding: 15px 16px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.environment-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.environment-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+
+/* ================================
+   Environment Name
+================================ */
+
+.environment-name {
+  font-weight: 600;
+  color: #1f2937 !important;
+  text-transform: capitalize;
+}
+
+
+/* ================================
+   Status
+================================ */
+
+.environment-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.environment-status.active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.environment-status.inactive {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* ================================
+   Edit Button
+================================ */
+
+.environment-edit-button {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.environment-edit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.environment-edit-button:active {
+  transform: translateY(1px);
+}
+
+
+/* ================================
+   Loading State
+================================ */
+
+.environment-loading {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Empty State
+================================ */
+
+.environment-empty {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+  .environment-page {
+    padding: 18px;
+  }
+
+  .environment-header {
+    margin-bottom: 18px;
+  }
+
+  .environment-header h1 {
+    font-size: 24px;
+  }
+
+  .environment-header p {
+    font-size: 13px;
+  }
+
+  .environment-table-container {
+    border-radius: 8px;
+  }
+
+  .environment-table {
+    min-width: 700px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .environment-page {
+    padding: 14px;
+  }
+
+  .environment-header h1 {
+    font-size: 22px;
+  }
+
+  .environment-table th,
+  .environment-table td {
+    padding: 12px;
+  }
+}
+

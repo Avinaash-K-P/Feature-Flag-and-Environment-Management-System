@@ -1,0 +1,310 @@
+/* =========================================
+   User Assignment Page
+   ========================================= */
+
+.user-assignment-page {
+  width: 100%;
+  padding: 24px;
+}
+
+
+/* =========================================
+   Header
+   ========================================= */
+
+.user-assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.user-assignment-header h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.user-assignment-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   Create Button
+   ========================================= */
+
+.user-assignment-create-button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  background-color: #1976d2;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.user-assignment-create-button:hover {
+  background-color: #1565c0;
+  box-shadow: 0 3px 8px rgba(25, 118, 210, 0.25);
+}
+
+.user-assignment-create-button:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================
+   Error Message
+   ========================================= */
+
+.user-assignment-error {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  border: 1px solid #ffcdd2;
+  border-radius: 6px;
+  background-color: #ffebee;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   Table Card
+   ========================================= */
+
+.user-assignment-table-container {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.user-assignment-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+/* =========================================
+   Table
+   ========================================= */
+
+.user-assignment-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.user-assignment-table th {
+  height: 48px;
+  padding: 0 18px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f8fafc;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.user-assignment-table td {
+  height: 58px;
+  padding: 10px 18px;
+  border-bottom: 1px solid #edf0f3;
+  color: #4b5563;
+  font-size: 14px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.user-assignment-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.user-assignment-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.user-assignment-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   Status Badge
+   ========================================= */
+
+.user-assignment-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.user-assignment-status.active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.user-assignment-status.inactive {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+
+/* =========================================
+   Action Buttons
+   ========================================= */
+
+.user-assignment-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-assignment-view-button,
+.user-assignment-edit-button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 13px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.user-assignment-view-button:hover,
+.user-assignment-edit-button:hover {
+  transform: translateY(-1px);
+}
+
+.user-assignment-view-button {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.user-assignment-view-button:hover {
+  background-color: #bbdefb;
+}
+
+.user-assignment-edit-button {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.user-assignment-edit-button:hover {
+  background-color: #ffe0b2;
+}
+
+
+/* =========================================
+   Loading State
+   ========================================= */
+
+.user-assignment-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   Empty State
+   ========================================= */
+
+.user-assignment-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 40px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+@media (max-width: 768px) {
+  .user-assignment-page {
+    padding: 18px;
+  }
+
+  .user-assignment-header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  .user-assignment-header h1 {
+    font-size: 24px;
+  }
+
+  .user-assignment-header p {
+    font-size: 13px;
+  }
+
+  .user-assignment-create-button {
+    width: 100%;
+    padding: 11px 16px;
+  }
+
+  .user-assignment-table-container {
+    border-radius: 8px;
+  }
+
+  .user-assignment-table {
+    min-width: 850px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-assignment-page {
+    padding: 14px;
+  }
+
+  .user-assignment-header h1 {
+    font-size: 22px;
+  }
+
+  .user-assignment-error {
+    font-size: 13px;
+  }
+}
+
