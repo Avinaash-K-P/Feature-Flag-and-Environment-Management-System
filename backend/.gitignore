@@ -1,0 +1,127 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# =========================
+# Virtual Environment
+# =========================
+
+.venv/
+.oldvenv/
+venv/
+oldvenv/
+env/
+ENV/
+
+# =========================
+# Environment Variables
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+
+*.log
+
+# =========================
+# Redis / Temporary Files
+# =========================
+
+*.rdb
+
+# =========================
+# Database
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Alembic
+# =========================
+
+# Keep migration files
+# Ignore only temporary Python cache
+alembic/__pycache__/
+
+# =========================
+# Testing / Coverage
+# =========================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Build / Distribution
+# =========================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# IDE - VS Code
+# =========================
+
+.vscode/
+!.vscode/settings.json
+
+# =========================
+# IDE - PyCharm
+# =========================
+
+.idea/
+
+# =========================
+# OS Files
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# Generated Reports / Files
+# =========================
+
+*.pdf
+*.xlsx
+*.csv
+
+# =========================
+# Secrets / Certificates
+# =========================
+
+*.pem
+*.key
+*.crt
